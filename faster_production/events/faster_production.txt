@@ -1,0 +1,23 @@
+namespace = faster_production
+
+country_event = {
+    id = faster_production.1
+    title = "Faster Production for Player"
+    desc = "Applies faster production only for the player-controlled nation."
+    picture = GFX_report_event_generic
+
+    # 设置事件触发条件
+    trigger = {
+        is_ai = no   # 仅适用于玩家
+    }
+
+    # 事件触发时间
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        # 调整玩家的生产效率相关参数
+        add_ideas = faster_production_idea
+    }
+}

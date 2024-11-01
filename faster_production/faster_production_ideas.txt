@@ -1,0 +1,11 @@
+faster_production_idea = {
+    allow = {
+        always = yes
+    }
+    remove_trigger = {
+        is_ai = yes   # 只对玩家生效，AI无此效果
+    }
+    modifier = {
+        military_factory_speed_factor = 100.0  # 调整为10倍生产速度
+    }
+}
